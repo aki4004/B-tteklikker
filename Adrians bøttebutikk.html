@@ -96,32 +96,32 @@
 </head>
 <body>
     <div class="grid">
-      <div class="grid1">
-        <h1>Bøtteklikker</h1> 
-        <h3 id="bøtter">Bøtter: 0</h3>
-        <h3 id="penger">Penger: 0</h3> 
-      </div>
-      <div class="grid2">
-        <button class="imgbutton" onclick="lagBøtte()">
-            <img id="bilde" src="https://raw.githubusercontent.com/aki4004/B-tteklikker/main/R%C3%B8db%C3%B8tte.svg" alt="Rød bøtte">
-        </button>
-      </div>
-      <div class="grid3">
-        <button class="sellbutton" onclick="selgBøttene()"><b>Selg Alle</b></button>
-        <button class="sellbutton" onclick="selgTiBøtter()"><b>Selg 10</b></button>
-        <button class="sellbutton" onclick="selgEnBøtte()"><b>Selg 1</b></button>
-      </div>
-      <div class="grid4">
-        <button onclick="oppgraderBlåBøtte()"><b>Blå Bøtte: $100</b></button>
-        <button onclick="oppgraderGrønnBøtte()"><b>Grønn Bøtte: $1000</b></button>
-      </div>
-      <div class="grid5">
+        <div class="grid1">
+            <h1>Bøtteklikker</h1> 
+            <h3 id="bøtter">Bøtter: 0</h3>
+            <h3 id="penger">Penger: 0</h3> 
+        </div>
+        <div class="grid2">
+            <button class="imgbutton" onclick="lagBøtte()">
+                <img id="bilde" src="https://raw.githubusercontent.com/aki4004/B-tteklikker/main/R%C3%B8db%C3%B8tte.svg" alt="Rød bøtte">
+            </button>
+        </div>
+        <div class="grid3">
+            <button class="sellbutton" onclick="selgBøttene()"><b>Selg Alle</b></button>
+            <button class="sellbutton" onclick="selgTiBøtter()"><b>Selg 10</b></button>
+            <button class="sellbutton" onclick="selgEnBøtte()"><b>Selg 1</b></button>
+        </div>
+        <div class="grid4">
+            <button onclick="oppgraderBlåBøtte()"><b>Blå Bøtte: $100</b></button>
+            <button onclick="oppgraderGrønnBøtte()"><b>Grønn Bøtte: $1000</b></button>
+        </div>
+        <div class="grid5">
 
-      </div>
-      <div class="grid6">
+        </div>
+        <div class="grid6">
 
-      </div>
-   </div>
+        </div>
+    </div>
     <script>
         let bøtte = 0;
         let penger = 0;
@@ -146,6 +146,7 @@
                 document.getElementById('penger').innerHTML = "Penger: $" + penger;
             }
         }
+
         function selgEnBøtte(){
             if (bøtte >= 1 && pengeOppgraderinger >= 1){
                 penger = penger + (1 * pengeOppgraderinger);
@@ -160,6 +161,7 @@
                 document.getElementById('penger').innerHTML = "Penger: $" + penger;
             }
         }
+
         function selgTiBøtter(){
             if (bøtte >= 10 && pengeOppgraderinger >= 1){
                 penger = penger + (10 * pengeOppgraderinger);
